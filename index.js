@@ -3,12 +3,12 @@ import axios from "axios";
 import dotenv from "dotenv";
 import cors from "cors";
 
-app.use(cors());
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(cors());
 
 const API_KEY = process.env.API_KEY;
 const SHEETDB_URL = process.env.SHEETDB_URL;
